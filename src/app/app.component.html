@@ -1,10 +1,29 @@
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
   <div class="form-group row mb-3">
     <input id="model" class="form-control" formControlName="model" placeholder="Modelo" />
+    @if (form.get("model")?.invalid && form.get("model")?.touched) {
+      @if (form.get("model")?.hasError("required")) {
+        <span class="error">El modelo es obligatorio</span>
+      }
+      @if (form.get("model")?.hasError("forbiddenModel")) {
+        <span class="error">{{ form.get("model")?.errors?.["forbiddenModel"] }}</span>
+      }
+    }
   </div>
 
   <div class="form-group row mb-3">
     <input id="license" class="form-control" formControlName="license" placeholder="Matrícula" />
+    @if (form.get("license")?.invalid && form.get("license")?.touched) {
+      @if (form.get("license")?.hasError("required")) {
+        <span class="error">La matrícula es obligatoria</span>
+      }
+      @if (form.get("license")?.hasError("pattern")) {
+        <span class="error">Formato de matrícula incorrecto</span>
+      }
+      @if (form.get("license")?.hasError("forbiddenLicense")) {
+        <span class="error">{{ form.get("license")?.errors?.["forbiddenLicense"] }}</span>
+      }
+    }
   </div>
 
   <div class="form-group row">
