@@ -1,27 +1,53 @@
-# FormValidators
+# Implementación de Validaciones en Formularios Reactivos de Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.1.
+Este repositorio contiene el código fuente utilizado en el video de YouTube donde se muestra cómo implementar validaciones en formularios reactivos de Angular. En el video se explica cómo utilizar la clase `Validators` y cómo implementar validaciones síncronas y asíncronas.
 
-## Development server
+## Enlace al Video
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+[![Implementación de Validaciones en Formularios Reactivos de Angular](https://img.youtube.com/vi/FWuAS5iR_to/hqdefault.jpg)](https://youtu.be/FWuAS5iR_to)
 
-## Code scaffolding
+## Contenido
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+-   **Uso de la clase `Validators`:** Se muestra cómo utilizar las validaciones básicas proporcionadas por Angular.
+-   **Validaciones Síncronas:** Se explica cómo crear y aplicar validaciones personalizadas que se ejecutan de forma síncrona.
+-   **Validaciones Asíncronas:** Se describe cómo implementar validaciones que realizan operaciones asíncronas, como verificaciones en un servidor remoto.
 
-## Build
+## Versiones
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+-   [Node.js](https://nodejs.org/) (versión 20.15.1 o superior)
+-   [Angular CLI](https://angular.io/cli) (versión 18.1.2 o superior)
 
-## Running unit tests
+## Instalación
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clona el repositorio:
+    ```bash
+    git clone https://github.com/DevCuellar/ReactiveFormsValidations
+    ```
+2. Navega al directorio del proyecto:
+    ```bash
+    cd ReactiveFormsValidations
+    ```
+3. Instala las dependencias:
+    ```bash
+    npm install
+    ```
 
-## Running end-to-end tests
+## Ejecución
+Para ejecutar el proyecto en un servidor local de desarrollo, utiliza el siguiente comando:
+    ```
+    ng serve
+    ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Luego, abre tu navegador y visita http://localhost:4200/ para ver la aplicación en acción.
 
-## Further help
+## Recursos Adicionales
+[Documentación de Angular](https://angular.dev/)
+[API de Validators](https://angular.dev/api/forms/Validators#)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Contribución
+¡Las contribuciones son bienvenidas! Si tienes alguna mejora o corrección, por favor abre un issue o envía un pull request.
+
+## Contacto
+Si tienes alguna pregunta o sugerencia, no dudes en contactarme a través de mi canal de [YouTube](https://www.youtube.com/channel/UCCCyQrI-O-YL89LpIDRm-7g) o [correo electrónico](mailto:devcuellar@gmail.com).
+
+¡Gracias por visitar el repositorio y ver el video! ¡Espero que encuentres útil este contenido!
